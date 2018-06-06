@@ -24,6 +24,48 @@
     {
         margin: 15px 0;
     }
+    
+    .services_slide_left h3
+    {
+        position: relative;
+        text-align: center;
+        background: #fff;
+        top: unset;
+        transform: none;
+        display: block;
+        padding-bottom: 15px;
+    }
+    
+    .services_slide_captions::before
+    {
+        display: block;
+    }
+    
+    .services_slide_captions::after
+    {
+        display: none;
+    }
+    
+    .team_left_slide_contents
+    {
+        height: 80px;
+        width: 80px;
+    }
+    
+    #team .slick-center .team_left_slide_contents
+    {
+        height: 110px;
+        width: 110px;
+    }
+    
+}
+
+@media(max-width: 767px)
+{
+    .team_right_slide_wrapper_inner::after
+    {
+        display: none;
+    }
 }
 
 @media(max-width: 480px)
@@ -42,5 +84,16 @@
     {
         width: 110px;
         font-size: 14px;
+    }
+}
+
+
+
+@media(max-width: 575px)
+{
+    #portfolio
+    {
+        -webkit-clip-path: polygon(0 2%, 100% 0, 100% 98%, 0% 100%);
+        clip-path: polygon(0 2%, 100% 0, 100% 98%, 0% 100%);
     }
 }
